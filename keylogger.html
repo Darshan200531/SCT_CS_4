@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Keyboard Event Logger</title>
+<link rel="stylesheet" href="keylogger.css">
+</head>
+
+<body>
+
+<div class="container">
+
+  <h1>Keyboard Event Logger</h1>
+
+  <textarea
+    id="typingArea"
+    placeholder="Start typing here..."
+  ></textarea>
+
+  <div class="buttons">
+    <button class="download" onclick="downloadLogs()">
+      Download Logs
+    </button>
+
+    <button class="clear" onclick="clearLogs()">
+      Clear Logs
+    </button>
+  </div>
+
+  <div class="logs" id="logs"></div>
+
+  <div class="stats">
+
+    <div class="card">
+      <h2 id="totalKeys">0</h2>
+      <p>Total Keys</p>
+    </div>
+
+    <div class="card">
+      <h2 id="lastKey">-</h2>
+      <p>Last Key</p>
+    </div>
+
+  </div>
+
+</div>
+<script src="keylogger.js"></script>
+</body>
+</html>
